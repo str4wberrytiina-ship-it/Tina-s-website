@@ -1,0 +1,339 @@
+
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #111;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    text-align: center;
+    padding: 35px 15px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-header h1 {
+    font-size: clamp(25px, 5vw, 42px);
+    letter-spacing: 5px;
+}
+
+.site-header img {
+    width: 45px;
+    vertical-align: middle;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    background: #111;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #aaa;
+    text-decoration: underline;
+}
+
+.nav-logo {
+    font-family: Georgia, serif !important;
+    font-size: 22px !important;
+}
+
+.nav-logo img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #ededed;
+}
+
+.hero-decoration {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(28px, 5vw, 43px);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.hero p {
+    margin: 15px 0 25px;
+    color: #555;
+    font-size: 16px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 1px solid #111;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: transparent;
+    color: #111;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   ART GALLERY
+========================= */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.art-card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s;
+}
+
+.art-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.art-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background: #eee;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.art-card img:hover {
+    opacity: 0.85;
+}
+
+.art-card h3 {
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.art-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.gallery-decoration {
+    max-width: 130px;
+    margin: 20px auto;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-preview {
+    background: #ededed;
+}
+
+.about-preview p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.text-link {
+    color: #111;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* =========================
+   SIMPLE PAGES
+========================= */
+
+.simple-page {
+    min-height: 65vh;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.simple-page h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.simple-page p {
+    max-width: 550px;
+    margin: 15px auto;
+}
+
+.simple-page a:not(.button) {
+    color: #111;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        gap: 15px;
+        padding: 18px 10px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .art-card img {
+        height: 280px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .site-header h1 {
+        letter-spacing: 2px;
+    }
+}

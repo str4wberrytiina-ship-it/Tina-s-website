@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tina's personal art gallery and creative portfolio.">
+    <title>Tina's Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>
+            TINA'S ART GALLERY
+            <img src="584.gif" alt="Decorative animation">
+        </h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="more art.html">MORE ART</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <img src="108.gif" alt="Decorative artwork" class="hero-decoration">
+
+            <h2>Art is a way of feeling.</h2>
+
+            <p>A collection of my artistic creations.</p>
+
+            <a href="#gallery" class="button">Explore Gallery</a>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>My Artwork</h2>
+            <p class="section-subtitle">A little collection of my creativity.</p>
+
+            <div class="gallery-container">
+
+                <div class="art-card">
+                    <img src="Tina art (2).jpg" alt="Artwork One" class="lightbox-trigger">
+                    <h3>Artwork One</h3>
+                    <p>Ecoline painting</p>
+                </div>
+
+                <div class="art-card">
+                    <img src="Tina art (8).jpg" alt="Artwork Two" class="lightbox-trigger">
+                    <h3>Artwork Two</h3>
+                    <p>Digital art</p>
+                </div>
+
+                <div class="art-card">
+                    <img src="Tina art (1).JPEG" alt="Artwork Three" class="lightbox-trigger">
+                    <h3>Artwork Three</h3>
+                    <p>Watercolor Painting</p>
+                </div>
+
+                <div class="art-card">
+                    <img src="Tina art (3).jpg" alt="Artwork Four" class="lightbox-trigger">
+                    <h3>Artwork Four</h3>
+                    <p>Ecoline Painting</p>
+                </div>
+
+            </div>
+
+            <a href="more art.html" class="button">See More Art</a>
+        </section>
+
+        <section id="about" class="section about-preview">
+            <h2>About Me</h2>
+
+            <p>
+                Welcome to my art gallery.
+                This is a space where I share my creativity,
+                imagination and artistic journey.
+            </p>
+
+            <a href="about.html" class="text-link">Read More About Me →</a>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Telegram: @Str4wberrytiina</p>
+            <a href="contact.html" class="text-link">Get in Touch →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Tina's Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <!-- Artwork Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button id="close" class="close-button" aria-label="Close image">
+            &times;
+        </button>
+
+        <img id="lightbox-image" src="" alt="Selected artwork">
+    </div>
+
+</body>
+</html>
